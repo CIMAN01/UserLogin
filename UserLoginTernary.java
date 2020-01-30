@@ -12,8 +12,8 @@ public class UserLoginTernary {
 
     // use a ternary operator
     public static String loginCredentialsCheck(String username, String password) {
-        String loginMsg = username.equals("neo") &&
-                password.equals("followthewhiterabbit") ? "Welcome, Neo" : "Invalid input";
+        // must use .equals() instead of '==' if using a scanner object
+        String loginMsg = username.equals("neo") && password.equals("followthewhiterabbit") ? "Welcome, Neo" : "Invalid input";
         return loginMsg;
     }
 
@@ -35,7 +35,3 @@ public class UserLoginTernary {
         System.out.println(display);
     }
 }
-
-
-
-
